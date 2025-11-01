@@ -43,10 +43,13 @@
             </div>
             <div class="container-fluid d-flex align-items-center justify-content-between">
                 <div class="navbar-header">
-                    <!-- Navbar Header--><a href="index.html" class="navbar-brand">
-                        <div class="brand-text brand-big visible text-uppercase"><strong
-                                class="text-primary">ADMIN</strong><strong>DASHBOARD</strong></div>
-                        <div class="brand-text brand-sm"><strong class="text-primary">D</strong><strong>A</strong></div>
+                    <!-- Navbar Header-->
+                    <a href="index.html" class="navbar-brand d-flex align-items-center">
+                        <img src="{{ asset('admin/img/new.png') }}" alt="Logo" class="brand-logo mr-2 img-fluid" width="40" height="40" loading="lazy">
+                        <div>
+                            <div class="brand-text brand-big visible text-uppercase"><strong class="text-primary">ADMIN</strong><strong>DASHBOARD</strong></div>
+                            <div class="brand-text brand-sm"><strong class="text-primary">D</strong><strong>A</strong></div>
+                        </div>
                     </a>
                     <!-- Sidebar Toggle Btn-->
                     <button class="sidebar-toggle"><i class="fa fa-long-arrow-left"></i></button>
@@ -77,7 +80,8 @@
         <nav id="sidebar">
             <!-- Sidebar Header-->
             <div class="sidebar-header d-flex align-items-center">
-                <div class="avatar"><img src="img/avatar-6.jpg" alt="..." class="img-fluid rounded-circle">
+                <div class="avatar">
+                    <img src="{{ asset('admin/img/avatar-6.jpg') }}" alt="Admin avatar" class="img-fluid rounded-circle sidebar-avatar" width="80" height="80" loading="lazy">
                 </div>
                 <div class="title">
                     <h1 class="h5">Admin</h1>
