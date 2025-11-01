@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Admin Theme Demo</title>
+  <link rel="stylesheet" href="css/style.default.css">
+  <link rel="stylesheet" href="css/theme.minimal.css">
+  <style>
+    body { font-family: Arial, Helvetica, sans-serif; background: #fff; margin: 0; padding: 20px; }
+    .grid { display:flex; gap:20px; }
+    .panel { width: 320px; border-radius:10px; overflow: hidden; box-shadow: 0 6px 18px rgba(0,0,0,0.06); }
+    .panel .title { padding:12px 16px; font-weight:700; }
+    .demo-sidebar { height: 420px; padding: 12px; color: #2d2416; }
+    .demo-sidebar ul { list-style:none; padding:0; margin:12px 0 0 0; }
+    .demo-sidebar li { padding:12px 16px; border-radius:6px; margin-bottom:8px; display:flex; align-items:center; gap:10px; }
+    .swatches { display:flex; gap:6px; margin-top:8px; }
+    .sw { width:28px; height:20px; border-radius:4px; border:1px solid rgba(0,0,0,0.06); }
+
+    /* Variant overrides using your palette */
+    .warm { background: linear-gradient(180deg,#BFA89E 0%, #D3C2A0 100%); }
+    .warm .title { background: rgba(45,36,22,0.04); }
+    .warm li { background: rgba(255,255,255,0.85); }
+    .warm li.active { background: #AF8746; color: #fff; }
+
+    .peachy { background: linear-gradient(180deg,#EFCD95 0%, #F7E8C8 100%); }
+    .peachy .title { background: rgba(45,36,22,0.03); }
+    .peachy li { background: rgba(255,255,255,0.9); }
+    .peachy li.active { background: #AF8746; color: #fff; }
+
+    .neutral { background: linear-gradient(180deg,#f3efe9 0%, #efe9e1 100%); }
+    .neutral .title { background: rgba(45,36,22,0.02); }
+    .neutral li { background: rgba(255,255,255,0.92); }
+    .neutral li.active { background: #BFA89E; color: #fff; }
+
+    .meta { padding:12px 16px; font-size:0.9rem; color:#655346; }
+  </style>
+</head>
+<body>
+  <h2>Admin Sidebar — 3 curated options</h2>
+  <p>Each panel shows a sidebar mockup using your palette. Pick the one you feel is "best" and I'll apply it across the dashboard.</p>
+  <div class="grid">
+
+    <div class="panel">
+      <div class="title">Warm Premium (recommended)</div>
+      <div class="demo-sidebar warm">
+        <div style="display:flex;align-items:center;gap:12px;">
+          <div style="width:48px;height:48px;border-radius:50%;background:rgba(45,36,22,0.08);"></div>
+          <div>
+            <div style="font-weight:700;">Brand Name</div>
+            <div style="font-size:0.85rem;color:rgba(45,36,22,0.8);">Admin</div>
+          </div>
+        </div>
+        <ul>
+          <li class="active">🏠 Dashboard</li>
+          <li>🧾 Orders</li>
+          <li>📦 Products</li>
+          <li>👥 Customers</li>
+          <li>⚙️ Settings</li>
+        </ul>
+        <div class="meta">Palette: <span style="font-weight:700;">Bronze / Beige / Peach / Muted Rose</span>
+          <div class="swatches" style="margin-top:8px;">
+            <div class="sw" style="background:#AF8746"></div>
+            <div class="sw" style="background:#D3C2A0"></div>
+            <div class="sw" style="background:#EFCD95"></div>
+            <div class="sw" style="background:#BFA89E"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="panel">
+      <div class="title">Soft Peach (friendly)</div>
+      <div class="demo-sidebar peachy">
+        <div style="display:flex;align-items:center;gap:12px;">
+          <div style="width:48px;height:48px;border-radius:50%;background:rgba(45,36,22,0.05);"></div>
+          <div>
+            <div style="font-weight:700;">Brand Name</div>
+            <div style="font-size:0.85rem;color:rgba(45,36,22,0.8);">Admin</div>
+          </div>
+        </div>
+        <ul>
+          <li class="active">🏠 Dashboard</li>
+          <li>🧾 Orders</li>
+          <li>📦 Products</li>
+          <li>👥 Customers</li>
+          <li>⚙️ Settings</li>
+        </ul>
+        <div class="meta">Palette: friendly peach tones
+          <div class="swatches" style="margin-top:8px;">
+            <div class="sw" style="background:#EFCD95"></div>
+            <div class="sw" style="background:#D3C2A0"></div>
+            <div class="sw" style="background:#AF8746"></div>
+            <div class="sw" style="background:#BFA89E"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="panel">
+      <div class="title">Quiet Neutral (minimal)</div>
+      <div class="demo-sidebar neutral">
+        <div style="display:flex;align-items:center;gap:12px;">
+          <div style="width:48px;height:48px;border-radius:50%;background:rgba(45,36,22,0.04);"></div>
+          <div>
+            <div style="font-weight:700;">Brand Name</div>
+            <div style="font-size:0.85rem;color:rgba(45,36,22,0.8);">Admin</div>
+          </div>
+        </div>
+        <ul>
+          <li class="active">🏠 Dashboard</li>
+          <li>🧾 Orders</li>
+          <li>📦 Products</li>
+          <li>👥 Customers</li>
+          <li>⚙️ Settings</li>
+        </ul>
+        <div class="meta">Palette: lighter neutral tones
+          <div class="swatches" style="margin-top:8px;">
+            <div class="sw" style="background:#BFA89E"></div>
+            <div class="sw" style="background:#EFE9E1"></div>
+            <div class="sw" style="background:#AF8746"></div>
+            <div class="sw" style="background:#D3C2A0"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <p style="margin-top:18px;color:#5b4a3a;">Tip: if you like one of these, tell me which (Warm / Peachy / Neutral) and I will apply it everywhere — navbar, buttons, badges, alerts and charts — and create a small style guide file.</p>
+</body>
+</html>
