@@ -1,0 +1,141 @@
+/*
+==============================================================
+Light Admin Theme — tailored for an e-commerce shop
+Overrides the dark admin template with a clean, readable light palette.
+Customize variables below to match brand colors.
+==============================================================
+*/
+
+:root {
+  /* Core palette */
+  --bg: #ffffff;            /* page background */
+  --surface: #ffffff;       /* panels, cards */
+  --muted-surface: #f8fafc; /* alternate surface */
+  --text: #0f1724;          /* primary text */
+  --muted: #6b7280;         /* secondary text */
+  --border: #e6e9ef;        /* neutral borders */
+
+  /* Brand */
+  --brand: #0ea5a4;         /* primary brand color */
+  --accent: #06b6d4;        /* accent/link */
+  --danger: #bb414d;
+
+  /* Shadows */
+  --shadow-1: 0 1px 3px rgba(15, 23, 36, 0.06);
+  --shadow-2: 0 4px 12px rgba(15, 23, 36, 0.08);
+}
+
+/* Base page */
+html, body {
+  background: var(--muted-surface);
+  color: var(--text);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.page-content {
+  background: var(--bg) !important;
+  color: var(--text) !important;
+}
+
+/* Navbar */
+nav.navbar {
+  background: var(--surface) !important;
+  color: var(--text) !important;
+  border-bottom: 1px solid var(--border) !important;
+  box-shadow: var(--shadow-1) !important;
+}
+nav.navbar a { color: var(--text) !important; }
+nav.navbar .sidebar-toggle { background: transparent; border-color: var(--border); color: var(--muted); }
+
+/* Sidebar */
+nav#sidebar {
+  background: var(--surface) !important;
+  color: var(--muted) !important;
+  border-right: 1px solid var(--border) !important;
+}
+nav#sidebar li a { color: var(--text) !important; }
+nav#sidebar li a:hover { background: var(--muted-surface) !important; }
+nav#sidebar li.active::before { background: var(--brand) !important; }
+nav#sidebar li.active > a { background: transparent !important; color: var(--text) !important; }
+
+/* Cards / blocks / dropdowns */
+.card,
+.block,
+.page-header,
+.card-header,
+.card-footer,
+.dropdown-menu,
+.modal-open .modal .modal-content {
+  background: var(--surface) !important;
+  color: var(--text) !important;
+  border: 1px solid var(--border) !important;
+  box-shadow: var(--shadow-2) !important;
+}
+
+.breadcrumb { color: var(--muted) !important; background: transparent; }
+.breadcrumb a { color: var(--accent) !important; }
+
+/* Forms */
+.form-control,
+.custom-select,
+.input-group-text,
+input.input-material {
+  background: #fff !important;
+  color: var(--text) !important;
+  border: 1px solid var(--border) !important;
+  box-shadow: none !important;
+}
+.form-control:focus, .custom-select:focus { border-color: var(--brand) !important; box-shadow: 0 0 0 3px rgba(14,165,164,0.08) !important; }
+
+/* Buttons */
+.btn-primary,
+.bg-primary,
+.badge-primary,
+.text-primary {
+  background-color: var(--brand) !important;
+  border-color: var(--brand) !important;
+  color: #fff !important;
+}
+.btn-outline-primary { color: var(--brand) !important; border-color: var(--brand) !important; }
+.btn-outline-primary:hover { background: var(--brand) !important; color: #fff !important; }
+
+/* Links */
+a { color: var(--accent) !important; }
+a:hover { color: #0896a1 !important; }
+
+/* Text utilities */
+.text-gray-light, .text-gray, .text-gray-dark { color: var(--muted) !important; }
+
+/* Tables */
+.table { background: transparent; }
+.table td, .table th { border-color: var(--border) !important; }
+.table-striped tbody tr:nth-of-type(odd) { background-color: #fff !important; }
+
+/* Forms: checkboxes/radios */
+.checkbox-template::before, .radio-template::before { background: #e9eef3 !important; border: 1px solid var(--border) !important; }
+.checkbox-template:checked::before, .radio-template:checked::before { background: var(--brand) !important; }
+
+/* Small view adjustments */
+.login-page::before { opacity: 0.06; }
+
+/* Accessibility & focus */
+a:focus, button:focus, .form-control:focus { outline: 3px solid rgba(6,182,212,0.12); outline-offset: 2px; }
+
+/* Utility: subtle divider */
+.dropdown-divider { border-top-color: var(--border) !important; }
+
+/* Brand accents for status icons */
+.profile .status.online { background: #22c55e !important; }
+.profile .status.away { background: #f59e0b !important; }
+.profile .status.busy { background: var(--danger) !important; }
+
+/* Small helpers for e-commerce look */
+.product-card { border: 1px solid var(--border); border-radius: 6px; background: var(--surface); padding: 12px; }
+.price { font-weight: 700; color: var(--text); }
+.price .amount { color: var(--brand); }
+
+/* Optional: override dark-only utilities to ensure contrast */
+.dropdown-menu a:hover { background: var(--muted-surface) !important; color: var(--text) !important; }
+
+/* End of light theme */
